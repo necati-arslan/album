@@ -1,0 +1,9 @@
+<div class="card mt-3" style="min-height: 150px;">
+  <div class="card-body">
+    <h5 class="card-title"><strong>Album Name:</strong>&nbsp;{{album?.title}}</h5>
+    <button type="button" class="btn btn-outline-success mr-2" (click)="open(album?.userId,'photos')"><i
+        class="fas fa-images mr-2" style="font-size: 25px; "></i>Photos</button>
+    <button type="button" class="btn btn-outline-success " (click)="open(album?.userId,'commnet')"><i
+        class="far fa-comments mr-2" style="font-size: 25px; "></i>Comments</button>
+  </div>
+</div>

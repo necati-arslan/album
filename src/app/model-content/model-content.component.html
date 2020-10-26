@@ -1,0 +1,32 @@
+<div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">{{data?.type | uppercase }}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div *ngIf="data?.type==='commnet'">
+        <div *ngIf="comments$ | async as comments else noData">
+            <app-commnets *ngFor="let comment of comments" [comment]="comment"></app-commnets>
+        </div>
+    </div>
+
+
+    <ng-template #noData>No data</ng-template>
+
+    <div *ngIf="data?.type==='photos'">
+        <div *ngIf="photos$ | async as photos else noData">
+            <div class="container">
+                <div class="row">
+                    <div *ngFor="let photo of photos" class=" col-sm-6 mb-2">
+                        <app-photos  [photo]="photo"></app-photos>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>

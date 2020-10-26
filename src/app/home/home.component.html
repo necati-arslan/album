@@ -1,0 +1,16 @@
+
+<div *ngIf="albums$ | async as albums else noData">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let album of albums" class="col-sm-6">
+                <app-album  [album]='album'></app-album>
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+<ng-template #noData>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio delectus libero, possimus nesciunt deserunt recusandae sapiente, provident fuga voluptate totam ea earum, perferendis id a placeat ullam deleniti asperiores ut.
+</ng-template>
+ 

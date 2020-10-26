@@ -1,0 +1,124 @@
+ /*footerSection*/
+
+.footerSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    overflow-y: hidden;
+    background-color: #eaeaea;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 16px;
+    
+}
+
+.footerSection > .inner{ 
+    width: 1200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footerSection > .inner > .wrapperColumn{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+.footerSection > .inner > .wrapperColumn > .col{
+
+    flex-basis:33%;
+    padding-right: 30px;
+
+}
+
+.footerSection > .inner > .wrapperColumn > .col .logoText{
+    display: inline;
+    padding: 0px!important;
+    margin: 0px;
+    vertical-align: bottom;
+}
+
+.footerSection > .inner > .wrapperColumn > .col .social-link{
+    margin:0px;
+    padding:0;
+
+}
+
+.footerSection > .inner > .wrapperColumn > .col .social-link li{
+    display: inline-block;
+    list-style: none;
+    margin:0 4px;
+}
+.footerSection > .inner > .wrapperColumn > .col .social-link li a{
+    color:#333;
+    width:30px;
+    height:25px;
+    line-height:24px;
+    text-align: center;
+    border-radius:5px;
+    text-decoration: none;
+    transition:400ms ease-in;
+}
+
+.footerSection > .inner > .wrapperColumn > .col .social-link li a:hover {
+
+    color: green;
+    font-size: 1.2rem;
+    
+}
+
+.footerSection > .inner > .wrapperColumn > .col > .headerSection{
+    padding-top: 22px;
+    padding-bottom: 15px;
+}
+
+.footerSection > .inner > .wrapperColumn > .col > .headerSection  h2{
+
+    font-size: 1.17rem;
+    margin: 0px !important;
+    padding: 0px !important;
+    padding-top: 15px;
+
+}
+
+
+
+ .footerSection > .inner > .wrapperColumn > .col .list{
+    text-decoration: none;
+    text-decoration: none;
+    list-style: none;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+@media screen and (max-width: 615px) {
+
+.footerSection{
+    padding: 20px;
+    margin: 0px;
+}
+
+.footerSection > .inner{ 
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+    
+.footerSection > .inner > .wrapperColumn{
+
+    flex-direction: column;
+
+}
+.footerSection > .inner > .wrapperColumn > .col{
+
+ 
+    padding:0px;
+
+}
+
+
+}
+
+
+/*footerSection*/

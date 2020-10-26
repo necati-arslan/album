@@ -1,0 +1,24 @@
+.navbar  .user  {
+    width: auto;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #c6e5b7;
+
+}
+
+.navbar  .user img {
+   width: 40px;
+   height: 40px;
+   border-radius: 4px;
+
+}
+
+.navbar .user .text {
+    
+    letter-spacing: 0.1rem;
+    color: #6f6d6d;
+ 
+ }
